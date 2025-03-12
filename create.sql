@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS lab_mysql;
+
+USE lab_mysql;
+
+DROP TABLE IF EXISTS cars;
+
+CREATE TABLE cars (
+car_id int,
+VIN VARCHAR(17) UNIQUE NOT NULL,
+manufacturer VARCHAR(20) NOT NULL,
+model VARCHAR(10) NOT NULL,
+Year YEAR NOT NULL,
+color VARCHAR(10) NOT NULL
+);
+
+SELECT *
+FROM cars;
+
+
